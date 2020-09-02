@@ -24,6 +24,20 @@ namespace BankEncapsulation
 
             Console.WriteLine("Would you like to make another deposit?\n" +
                 "Type Y or N");
+
+            var yes = Console.ReadLine($"{Y}");
+
+
+
+
+
+
+
+
+
+
+
+
             
 
         }
