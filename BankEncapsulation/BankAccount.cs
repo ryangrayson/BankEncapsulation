@@ -14,10 +14,43 @@ namespace BankEncapsulation
 
 
         //Encapsulation
-        public void Deposit(double amount) //double because it could be a decimal
+        public void Deposit() //double because it could be a decimal
                                            //amount because it makes sense to name as the amount of the deposit 
         {
-            balance = amount;
+            Console.WriteLine("How much would you like to deposit?");
+
+            balance += Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine($"Your new balance is {GetBalance()}");
+            Console.WriteLine("Would you like to make another deposit? Yes or No?");
+            var depositAgain = Console.ReadLine().ToLower();
+
+
+            
+            while (depositAgain == "yes")
+            {
+                Console.WriteLine("How much more would you like to deposit?");
+                balance += Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine($"Your new balance is {GetBalance()}");
+                Console.WriteLine("Would you like to make another deposit? Yes or No?");
+                depositAgain = Console.ReadLine().ToLower();
+            }
+                if (depositAgain == "no")
+                {
+                    Console.WriteLine($"Your current balance is {GetBalance()}. Have a nice day!");
+                }
+                    
+                
+           
+                
+
+                
+          
+            
+
+              
+
+           
         }
 
 

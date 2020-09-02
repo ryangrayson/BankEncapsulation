@@ -10,22 +10,28 @@ namespace BankEncapsulation
             var ryansAccount = new BankAccount(); //--How to create a new instance of class BankAccount
 
             //Allow the user of the application to Deposit money and retrieve their balance through the console
-            Console.WriteLine("Hello! How much would you like to deposit?");
+            //Console.WriteLine("Hello! How much would you like to deposit?");
             
 
-            var amountToDeposit = double.Parse(Console.ReadLine());
+            //var amountToDeposit = double.Parse(Console.ReadLine());
 
             //Call the deposit method
-            ryansAccount.Deposit(amountToDeposit);
+            ryansAccount.Deposit();
 
-            Console.WriteLine($"Thank you! You have deposited ${amountToDeposit}\n" +
-                $"Your balance is now ${ryansAccount.GetBalance()}");
-            Console.Beep();
+            //Console.WriteLine($"Thank you! You have deposited ${amountToDeposit}\n" +
+            //    $"Your balance is now ${ryansAccount.GetBalance()}");
+            //Console.Beep();
 
-            Console.WriteLine("Would you like to make another deposit?\n" +
-                "Type Y or N");
+            //Console.WriteLine("Would you like to make another deposit?\n" +
+            //    "Yes or No");
 
-            var yes = Console.ReadLine($"{Y}");
+
+            
+
+         
+
+
+            
 
 
 
